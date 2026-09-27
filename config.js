@@ -21,11 +21,11 @@ window.APP_CONFIG = {
     /* ============== 个人信息 ============== */
     profile: {
         // 站点显示的用户名（右上角徽章 + 问候语中会出现 {name} 占位）
-        name: "Fqzlr",
+        name: "MiaoWu",
 
         // 头像图片 URL（用在锁屏 + 右上角小头像）
         // 想换头像？把链接替换成你自己的图片地址即可
-        avatar: "https://q1.qlogo.cn/g?b=qq&nk=20447289&s=640",
+        avatar: "https://cati.cc.cd/favicon/avatar.webp",
     },
 
     /* ============== 锁屏 ============== */
@@ -41,27 +41,27 @@ window.APP_CONFIG = {
     // 下面这些键名会被 index.html 里 data-cfg-href / data-cfg-open 引用
     // 想新增链接？在下方加一行：键名: "URL"，然后在 HTML 的对应元素上写 data-cfg-href="links.键名"
     links: {
-        blog:     "https://fqzlr.com/",                     // 博客主页
-        bilibili: "https://space.bilibili.com/2017273493",  // B 站个人空间
-        github:   "https://github.com/fqzlr",               // GitHub
-        qqGroup:  "https://qm.qq.com/q/wrmF4FI9pu",         // QQ 群
-        email:    "mailto:fqzlr@outlook.com",               // 邮箱
-        rss:      "https://fqzlr.com/rss/",                 // RSS 订阅
-        posts:    "https://fqzlr.com/posts/",               // 博客文章列表（画廊右上小图）
-        moments:  "https://fqzlr.com/moments/",             // 博客瞬间（画廊右下小图）
+        blog:     "https://cati.cc.cd",                     // 博客主页
+        bilibili: "https://space.bilibili.com/384057775",  // B 站个人空间
+        github:   "https://github.com/ZhuangRenyang",               // GitHub
+        qqGroup:  "mqqwpa://im/chat?chat_type=wpa&uin=996491835",         // QQ
+        email:    "mailto:996491835@qq.com",               // 邮箱
+        rss:      "https://cati.cc.cd/rss/",                 // RSS 订阅
+        posts:    "https://cati.cc.cd/list/",               // 博客文章列表（画廊右上小图）
+        moments:  "https://cati.cc.cd/friends/",             // 博客瞬间（画廊右下小图）
     },
 
     /* ============== 搜索 ============== */
     // 锁屏外的"放大镜"按钮使用的搜索 URL，{query} 会被替换成用户输入
     search: {
-        url: "https://fqzlr.com/?s={query}",
+        url: "https://cati.cc.cd/?s={query}",
         // 想换成 Google？改成 "https://www.google.com/search?q={query}"
     },
 
     /* ============== 问候语 ============== */
     greetings: {
         // 副标题（始终显示在问候语下方）
-        sub: "躬身入局，心为主理，行有尺度，自持本心",
+        sub: "Wish Upon A Star —「所念皆星河」",
 
         // 根据时间段显示不同问候
         // from / to 是 24 小时制的小时数；to 不包含（例如 12 表示 06:00 ~ 12:00）
@@ -76,8 +76,8 @@ window.APP_CONFIG = {
 
     /* ============== 每日格言 ============== */
     quote: {
-        text:   "躬身入局，心为主理，行有尺度，自持本心。",
-        author: "— Fqzlr",
+        text:   "Wish Upon A Star —「所念皆星河」",
+        author: "— MiaoWu",
     },
 
     /* ============== 音乐播放列表 ============== */
@@ -85,19 +85,19 @@ window.APP_CONFIG = {
     // 想加歌？复制一段花括号对象，title 改歌名、art 改封面图 URL、url 改音频文件 URL
     playlist: [
         {
-            title: "Lofi Study Beats",
-            art:   "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=150",
-            url:   "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            title: "Flower Dance",
+            art:   "https://p1.music.126.net/Ht2oP1r8uK7GSZGZupbBWA==/109951168761281269.jpg?param=130y130",
+            url:   "https://gcore.jsdelivr.net/gh/ZhuangRenyang/MiaoWu-blog-img@main/audio/FlowerDance.mp3"
         },
         {
-            title: "Chill Vibes",
-            art:   "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=150",
-            url:   "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+            title: "Fragile",
+            art:   "https://p2.music.126.net/oAjf1-thl2QeVld60lnLXg==/109951170165164820.jpg?param=130y130",
+            url:   "https://gcore.jsdelivr.net/gh/ZhuangRenyang/MiaoWu-blog-img@main/audio/Fragile.mp3"
         },
         {
-            title: "Night Drive",
-            art:   "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=150",
-            url:   "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+            title: "Just Glow",
+            art:   "https://p1.music.126.net/9rBhQmWl6r3prKe7OJrBbQ==/109951173193199327.jpg?param=130y130",
+            url:   "https://gcore.jsdelivr.net/gh/ZhuangRenyang/MiaoWu-blog-img@main/audio/JustGlow.mp3"
         },
     ],
 
