@@ -528,48 +528,102 @@ body::before {
    ========================================================================== */
 
 @media (max-width: 900px) {
+    /* 移动端基础：允许纵向滚动，内容从顶部开始排布，消除顶部空隙 */
+    body {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
+        align-items: flex-start;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 15px 0 calc(110px + env(safe-area-inset-bottom));
+    }
+
+    .lockscreen {
+        height: 100vh;
+        height: 100dvh;
+    }
+
     .desktop-container {
         flex-direction: column;
         gap: 15px;
+        width: 100%;
+        padding: 0 12px;
     }
+
     .sidebar {
         flex-direction: row;
-        width: auto;
-        height: 70px;
-        padding: 15px 20px;
-    }
-    .main-board {
-        width: 95vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 480px;
         height: auto;
-        min-height: 500px;
+        padding: 12px 14px;
+        gap: 12px;
+    }
+
+    .sidebar-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .main-board {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        min-height: 0;
         padding: 20px;
         grid-template-columns: 1fr;
     }
+
+    .center-spacer {
+        display: none;
+    }
+
     .left-col, .right-col {
         grid-column: 1;
         align-items: center;
+        width: 100%;
     }
+
     .greeting, .greeting-sub {
         text-align: center;
     }
+
     .header-right {
         justify-content: center;
     }
+
     .character-bg-inside {
         height: 60%;
         opacity: 0.5;
     }
+
     .lock-clock {
         font-size: 4rem;
     }
+
+    /* 底部 Dock 固定悬浮，滚动时也始终可见，且不被浏览器工具栏遮住 */
     .bottom-dock {
-        bottom: 10px;
+        position: fixed;
+        bottom: calc(12px + env(safe-area-inset-bottom));
         padding: 10px 20px;
         gap: 12px;
+        max-width: calc(100vw - 24px);
+        overflow-x: auto;
+        scrollbar-width: none;
     }
+
+    .bottom-dock::-webkit-scrollbar {
+        display: none;
+    }
+
     .dock-icon {
         width: 42px;
         height: 42px;
         font-size: 1.2rem;
+        flex-shrink: 0;
     }
 }
