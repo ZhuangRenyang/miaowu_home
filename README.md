@@ -2,7 +2,7 @@
 
 > 仿桌面 / 锁屏样式的玻璃态个人主页。点击锁屏解锁，内含实时时钟、每日格言、音乐播放器与快捷入口。
 
-在线预览：<https://fqzlr.com/>
+在线预览：<[https://home.cati.cc.c](https://home.cati.cc.cd)>
 
 ---
 
@@ -92,7 +92,7 @@ links: {
 
 ```js
 search: {
-    url: "https://fqzlr.com/?s={query}",  // {query} 会被替换成用户输入
+    url: "https://home.cati.cc.cd/?s={query}",  // {query} 会被替换成用户输入
 },
 ```
 
